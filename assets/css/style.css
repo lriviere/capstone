@@ -10,11 +10,41 @@ body {
     background-color: white;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+}
+
+h1 {
+  font-size: 6rem;
+  font-weight: 900;
+  margin-bottom: 2rem;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
 .container {
   margin-left: 2rem;
   border: 1px solid black; /**for debugging **/
   display: flex;
   width: 100%;
+}
+
+.left-container {
+  flex: 1;
+  max-width: 60%;
+
+
+}
+
+.right-container {
+  flex: 1;
+  max-width: 40%;
+  display: flex;
+  align-items: center;
+
 }
 
 /*Header*/
@@ -38,8 +68,6 @@ header {
 
 }
 
-
-
 .logo {
   display: flex;
   align-items: center;
@@ -55,4 +83,37 @@ nav {
 
 nav li {
   display: inline;
+
+}
+
+nav a {
+  margin-right: 1.33rem;
+}
+
+
+/*Main banner*/
+
+.jumbotron {
+  padding: 3.7rem 2rem;
+}
+
+.left-container img {
+  max-width:100%;
+  /*padding: 2rem 1.5rem;*/
+
+}
+
+.cta {
+  padding: 3rem 3rem;
+  margin-left: 3.3rem;
+}
+
+.cta-button {
+  background-color: grey;
+  color: white;
+  padding: 0.9rem 0.9rem;
+  margin: 2rem 0;
+  justify-content: center;
+
+  text-align: center;
 }
