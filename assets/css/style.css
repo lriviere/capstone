@@ -21,6 +21,18 @@ h1 {
   margin-bottom: 2rem;
 }
 
+h2 {
+  font-size: 4rem;
+  font-weight:900;
+  margin-top: 2.7rem;
+  margin-bottom: 2rem;
+}
+
+h3 {
+  font-size: 3rem;
+  margin-bottom: 0.7rem;
+}
+
 p {
   font-size: 1.5rem;
 }
@@ -36,14 +48,11 @@ p {
   flex: 1;
   max-width: 60%;
 
-
 }
 
 .right-container {
   flex: 1;
   max-width: 40%;
-  display: flex;
-  align-items: center;
 
 }
 
@@ -95,6 +104,16 @@ nav a {
 
 .jumbotron {
   padding: 3.7rem 2rem;
+  background-color: #DCDCDC;
+}
+
+.jumbotron .left-container {
+  padding-right: 2rem;
+}
+
+.jumbotron .right-container {
+  display: flex;
+  align-items: center;
 }
 
 .left-container img {
@@ -114,6 +133,54 @@ nav a {
   padding: 0.9rem 0.9rem;
   margin: 2rem 0;
   justify-content: center;
-
   text-align: center;
 }
+
+/*News container*/
+
+.news {
+  padding: 3.7rem 2rem;
+}
+
+.news .left-container{
+  padding-right: 2rem;
+}
+
+.quote {
+  margin-bottom: 2rem;
+}
+
+.card {
+  display: flex;
+  align-items: flex-start;
+  padding: 2rem 2rem;
+  border: 1px solid red;
+}
+
+      .card-img {
+        width: 35%;
+        border: 1px solid green;
+      }
+
+      .card-img img {
+        max-width: 100%;
+
+        }
+
+      .card-info {
+        width: 65%;
+        margin: 2.7rem;
+      }
+
+      .card:first-child {
+        padding-top: 0rem;
+      }
+
+      .card:nth-child(1n+3) {
+        background-color: #DCDCDC;
+      }
+
+      .card p {
+        line-height: 2rem;
+        margin-bottom: 2rem;
+      }
