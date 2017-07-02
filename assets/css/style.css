@@ -1,6 +1,8 @@
+
+
+/*================*/
 /*Universal styles*/
-/*font-family: 'Raleway', sans-serif;
-font-family: 'Playfair Display', serif;*/
+/*================*/
 
 
 html  {
@@ -16,7 +18,7 @@ body {
 .wrapper {
   max-width: 105rem;
   margin: 0 auto;
-  border: 1px solid yellow;
+  /*border: 1px solid yellow;*/
 }
 
 img {
@@ -53,22 +55,29 @@ h4 {
   padding-bottom: 0.67rem;
 }
 
-p {
+p, a {
   font-size: 1.4rem;
+
+}
+
+a:hover {
+  color: #316bad;
+  border-color: #316bad;
+  transition: all .3s ease-in-out;
 }
 
 .container {
-  /*margin-left: 2rem;*/
-  border: 1px solid black; /**for debugging **/
+
+  /**border: 1px solid black; for debugging **/
   display: flex;
-  width: 100%;
+  max-width: 1260px;
+  margin: 0 auto;
 }
 
 .left-container {
   flex: 1;
   max-width: 60%;
   padding-right: 2rem;
-
 
 }
 
@@ -83,9 +92,9 @@ p {
   margin-bottom: 2rem;
 }
 
-/*========*/
+/*================*/
 /*MOBILE FOR GENERIC */
-/*========*/
+/*================*/
 @media only screen and (max-width: 470px) {
 
   h1 {
@@ -104,27 +113,47 @@ p {
     font-size: 1rem;
   }
 
-
-  .left-container {
-  max-width: 100%;
-  padding: 0;
-  }
-
-  .right-container {
+  .left-container, .right-container  {
     max-width: 100%;
     padding: 0;
   }
+
+
 }
 
+/*================*/
+/*Tablet for Generic*/
+/*================*/
+
+@media only screen and (max-width: 770px) {
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  h4, a, p {
+    font-size: 1rem;
+  }
 
 
-/*Header*/
+}
 
+/*================*/
+     /*Header*/
+/*================*/
 .header-container {
   margin-left: 2rem;
   margin-right: 2rem;
 
-  border: 1px solid green; /**for debugging **/
+  border: 1px solid green;
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -132,12 +161,13 @@ p {
 }
 
 header {
-  border: 1px solid red; /**for debugging **/
+  border: 1px solid red; for debugging
   height: 4rem;
   display: flex;
   /*justify-content: space-between;*/
   align-items: center;
   font-size: 2rem;
+  background-color: #ffffff;
 
 }
 
@@ -148,10 +178,11 @@ header {
 
 header span {
   font-weight: 600;
+  color:#316bad;
 }
 
 nav {
-  border: 1px solid orange; /**for debugging **/
+  /**border: 1px solid orange; for debugging **/
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -172,8 +203,9 @@ nav a {
   font-size: 1.5rem;
 
 }
-
+/*================*/
 /****** MOBILE FOR HEADER *****/
+/*================*/
 
 @media only screen and (max-width: 470px){
   .logo {
@@ -191,11 +223,13 @@ nav a {
   }
 }
 
+/*================*/
 /*Main banner*/
+/*================*/
 
 .jumbotron {
   padding: 3.7rem 2rem;
-  background-color: #DCDCDC;
+  background-color: #bdccd4;
   width:auto;
 }
 
@@ -211,20 +245,32 @@ nav a {
 
 .cta {
   padding: 2rem 2rem;
+  color: #555555;
   /*margin-left: 3.3rem;*/
 }
 
 .cta-button {
-  background-color: grey;
-  color: white;
+  background-color: #57687a;
+
   padding: 0.9rem 0.9rem;
   margin: 2rem 0;
   justify-content: center;
   text-align: center;
 }
 
+.cta-button a {
+color: #FFFFFF;
+}
 
+.cta-button:hover {
+  background-color:#316bad;
+  transition: all .5s ease-in-out;
+
+}
+
+        /*================*/
 /****** MOBILE FOR MAIN BANNER *****/
+      /*================*/
 @media only screen and (max-width: 470px) {
   .jumbotron {
     flex-direction:column;
@@ -240,8 +286,9 @@ nav a {
 
 }
 
-
+/*================*/
 /*News container*/
+/*================*/
 
 .news {
   padding: 3.7rem 2rem;
@@ -252,7 +299,7 @@ nav a {
   display: flex;
   align-items: flex-start;
   padding: 2rem 2rem;
-  border: 1px solid red;
+  /*border: 1px solid red;*/
 }
 
       .card-img {
@@ -278,7 +325,7 @@ nav a {
       }
 
       .card:nth-child(1n+3) {
-        background-color: #DCDCDC;
+        background-color: #bdccd4;
       }
 
       .card p {
@@ -287,40 +334,46 @@ nav a {
 
       }
 
+      .read-more {
+        border: 1px solid black;
+        padding: 0 1rem;
+        border-radius: 20px;
 
+      }
+
+/*================*/
 /****** MOBILE FOR NEWS *****/
-
+/*================*/
 @media only screen and (max-width: 470px){
-.news {
-  padding-top:2rem;
-}
+  .news {
+    padding-top:2rem;
+  }
 
-.news .left-container {
-  display:none;
-}
+  .news .left-container {
+    display:none;
+  }
 
-.card {
-  flex-direction: column;
-  padding: 0;
-}
+  .card {
+    flex-direction: column;
+    padding: 0;
+  }
 
-.card-img {
-  width: 100%;
-}
+  .card-img {
+    width: 100%;
+  }
 
-.card-img-desktop {
-  display: none;
-}
+  .card-img-desktop {
+    display: none;
+  }
 
-.card-img-mobile {
-  display: block;
-}
+  .card-img-mobile {
+    display: block;
+  }
 
-.card-info {
-  margin:0;
-  padding:1.33rem 0;
-}
-
+  .card-info {
+    margin:0;
+    padding:1.33rem 0;
+  }
 
  }
 
@@ -332,13 +385,13 @@ nav a {
 .courses {
   display:block;
   padding-bottom: 2.7rem;
-  background-color: #DCDCDC;
+  background-color: #bdccd4;
   width:auto;
 
 }
 
 .section-header {
-  border:1px solid orange;
+  /*border:1px solid orange; */
   margin: 0;
   text-align: center;
   padding-top: 2.7rem;
@@ -356,7 +409,7 @@ nav a {
 
 .grid-item {
   padding-right: 2.7rem;
-  border: 1px solid green;
+  /*border: 1px solid green;*/
   max-width: 25%;
   padding: 0 2rem 2rem 2rem;
   display: flex;
@@ -365,14 +418,16 @@ nav a {
 }
 
 .grid-item-head {
-  border: 1px solid red;
+  /*border: 1px solid red;*/
   background: white;
   align-items: stretch;
   height:100%;
   padding: 1rem 1rem 2rem 1rem;
 }
 
-/* Courses Mobile */
+/*================*/
+/* Mobile for Courses */
+/*================*/
 
 @media only screen and (max-width: 470px) {
   .courses {
@@ -412,17 +467,16 @@ nav a {
 }
 
 
-
-/*=======*/
+/*================*/
 /*Thesis*/
-/*=======*/
+/*================*/
 
 
 
 .thesis {
   display: block;
   padding: 3.7rem 2rem;
-  border: 1px solid purple;
+  /*border: 1px solid purple;*/
 }
 
 .thesis video {
@@ -431,10 +485,12 @@ nav a {
 
 .thesis .card:first-child {
   padding-top: 2rem;
-  background-color: #DCDCDC;
+  background-color: #bdccd4;
 }
 
+/*================*/
 /*Mobile for Thesis*/
+/*================*/
 
 @media only screen and (max-width: 470px) {
 
@@ -458,13 +514,13 @@ nav a {
 
 }
 
-/*=====*/
+/*================*/
 /*Footer*/
-/*=====*/
+/*================*/
 
 
 footer {
-  border: 1px solid grey;
+  border-top: 1px solid #bdccd4;
   display: flex;
   justify-content: space-between;
   margin-left: 2rem;
@@ -489,7 +545,9 @@ footer a {
   margin-right: 2rem;
 }
 
+/*================*/
 /*Mobile for footer*/
+/*================*/
 
 @media only screen and (max-width: 470px) {
   footer {
