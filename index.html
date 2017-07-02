@@ -5,6 +5,7 @@
     <link href="assets/css/reset.css" type="text/css" rel="stylesheet">
     <link href="assets/css/style.css" type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Raleway:400,700" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Capstone Academy</title>
 
   </head>
@@ -19,10 +20,8 @@
       <img src="./assets/images/ic-logo.svg">
       <span>COLMAR</span> ACADEMY
     </div>
-    <!-- <div class="logo-text">
 
-    </div> -->
-    <nav>
+    <nav class="desktop">
       <ul>
         <li><a href="#">On Campus</a></li>
         <li><a href="#">Online</a></li>
@@ -30,6 +29,14 @@
         <li><a href="#">Sign in</a></li>
       </ul>
     </nav>
+
+    <nav class="mobile">
+        <a href="#"><img src="./assets/images/ic-logo.svg"></a>
+        <a href="#"><img src="./assets/images/ic-on-campus.svg"></a>
+        <a href="#"><img src="./assets/images/ic-online.svg"></a>
+        <a href="#"><img src="./assets/images/ic-login.svg"></a>
+    </nav>
+
   </div>
 </header>
 
@@ -72,8 +79,8 @@
     <div class="right-container">
       <div class="card">
         <div class="card-img">
-          <!-- <img class="mobile" src="./assets/images/information-orientation-mobile.jpg"> -->
-          <img src="./assets/images/information-orientation.jpg">
+          <img class="card-img-mobile" src="./assets/images/information-orientation-mobile.jpg">
+          <img class="card-img-desktop" src="./assets/images/information-orientation.jpg">
         </div>
         <div class="card-info">
           <h3>Orientation date</h3>
@@ -84,8 +91,8 @@
 
       <div class="card">
         <div class="card-img">
-          <!-- <img class="mobile" src="./assets/images/information-campus-mobile.jpg"> -->
-          <img src="./assets/images/information-campus.jpg">
+          <img class="card-img-mobile" src="./assets/images/information-campus-mobile.jpg">
+          <img class="card-img-desktop" src="./assets/images/information-campus.jpg">
         </div>
         <div class="card-info">
           <h3>Our campus</h3>
@@ -96,8 +103,8 @@
 
       <div class="card">
         <div class="card-img">
-          <!-- <img class="mobile" src="./assets/images/information-guest-lecture-mobile.jpg"> -->
-          <img src="./assets/images/information-guest-lecture.jpg">
+          <img class="card-img-mobile" src="./assets/images/information-guest-lecture-mobile.jpg">
+          <img class="card-img-desktop" src="./assets/images/information-guest-lecture.jpg">
         </div>
         <div class="card-info">
           <h3>Our guest lecture</h3>
@@ -211,8 +218,8 @@
           Video not supported</video>
         </div>
 
-        <h3>Reimagine urban</h3>
-        <p class="quote">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci v</p>
+        <h3 class="mobile-hide">Reimagine urban</h3>
+        <p class="quote mobile-hide">"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci v</p>
       </div>
 
       <div class="right-container">
@@ -238,7 +245,7 @@
       </div>
 
 
-    </div> 
+    </div>
   </div>
 
 
@@ -249,7 +256,7 @@
     <p>&#9400; 2016 Colmar Academy. All rights reserved.</p>
   </div>
 
-  <div class="user-rights">
+  <div class="user-rights ">
     <div class="terms">
       <a href="#">Terms</a>
     </div>

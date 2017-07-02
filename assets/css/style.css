@@ -83,6 +83,41 @@ p {
   margin-bottom: 2rem;
 }
 
+/*========*/
+/*MOBILE FOR GENERIC */
+/*========*/
+@media only screen and (max-width: 470px) {
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  h4, a, p {
+    font-size: 1rem;
+  }
+
+
+  .left-container {
+  max-width: 100%;
+  padding: 0;
+  }
+
+  .right-container {
+    max-width: 100%;
+    padding: 0;
+  }
+}
+
+
+
 /*Header*/
 
 .header-container {
@@ -122,6 +157,11 @@ nav {
   align-items: center;
 }
 
+nav.mobile {
+  display: none;
+  width:100%;
+}
+
 nav li {
   display: inline;
   margin-right: 2rem;
@@ -133,8 +173,22 @@ nav a {
 
 }
 
-@media only screen and (max-width:425px;) {
+/****** MOBILE FOR HEADER *****/
 
+@media only screen and (max-width: 470px){
+  .logo {
+    display: none;
+  }
+  nav.desktop  {
+    display: none;
+    }
+  nav.mobile {
+    display: flex;
+    justify-content: space-between;
+  }
+  header {
+    height: 5.3rem;
+  }
 }
 
 /*Main banner*/
@@ -169,6 +223,24 @@ nav a {
   text-align: center;
 }
 
+
+/****** MOBILE FOR MAIN BANNER *****/
+@media only screen and (max-width: 470px) {
+  .jumbotron {
+    flex-direction:column;
+    padding:0;
+  }
+
+.cta {
+  padding-left: 1.3rem;
+  width: 100%;
+}
+
+
+
+}
+
+
 /*News container*/
 
 .news {
@@ -192,6 +264,9 @@ nav a {
         max-width: 100%;
 
         }
+      .card-img-mobile {
+        display: none;
+      }
 
       .card-info {
         width: 65%;
@@ -211,6 +286,43 @@ nav a {
         margin-bottom: 2rem;
 
       }
+
+
+/****** MOBILE FOR NEWS *****/
+
+@media only screen and (max-width: 470px){
+.news {
+  padding-top:2rem;
+}
+
+.news .left-container {
+  display:none;
+}
+
+.card {
+  flex-direction: column;
+  padding: 0;
+}
+
+.card-img {
+  width: 100%;
+}
+
+.card-img-desktop {
+  display: none;
+}
+
+.card-img-mobile {
+  display: block;
+}
+
+.card-info {
+  margin:0;
+  padding:1.33rem 0;
+}
+
+
+ }
 
 
 /*=========*/
@@ -260,6 +372,47 @@ nav a {
   padding: 1rem 1rem 2rem 1rem;
 }
 
+/* Courses Mobile */
+
+@media only screen and (max-width: 470px) {
+  .courses {
+    background: white;
+  }
+
+  .grid {
+    flex-direction: column;
+  }
+
+  .grid-item {
+    max-width: 100%;
+
+  }
+
+  .grid-item-img {
+    display: none;
+
+  }
+
+.grid-item-head {
+  background: #DCDCDC;
+  padding: 1.33rem 1.33rem;
+
+}
+
+  .grid-item-head h4, .grid-item-head p  {
+    display: none;
+  }
+
+  .grid-item-head h3 {
+
+  }
+
+
+
+}
+
+
+
 /*=======*/
 /*Thesis*/
 /*=======*/
@@ -278,9 +431,32 @@ nav a {
 
 .thesis .card:first-child {
   padding-top: 2rem;
-  background-color: #DCDCDC
+  background-color: #DCDCDC;
 }
 
+/*Mobile for Thesis*/
+
+@media only screen and (max-width: 470px) {
+
+  .mobile-hide {
+    display:none;
+  }
+
+.thesis {
+  padding:0rem;
+  margin-bottom: 2rem;
+}
+
+.thesis .right-container {
+  display: none;
+}
+
+.thesis video {
+  width: 100%;
+  padding-bottom: 0rem;
+}
+
+}
 
 /*=====*/
 /*Footer*/
@@ -312,3 +488,15 @@ footer a {
   font-size: 1.5rem;
   margin-right: 2rem;
 }
+
+/*Mobile for footer*/
+
+@media only screen and (max-width: 470px) {
+  footer {
+    padding: 1.33rem 0;
+  }
+
+  .terms, .privacy {
+    display: none;
+    font-size: 1rem;
+  }
