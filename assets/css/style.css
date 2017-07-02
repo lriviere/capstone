@@ -58,7 +58,7 @@ p {
 }
 
 .container {
-  margin-left: 2rem;
+  /*margin-left: 2rem;*/
   border: 1px solid black; /**for debugging **/
   display: flex;
   width: 100%;
@@ -67,6 +67,8 @@ p {
 .left-container {
   flex: 1;
   max-width: 60%;
+  padding-right: 2rem;
+
 
 }
 
@@ -122,14 +124,18 @@ nav {
 
 nav li {
   display: inline;
+  margin-right: 2rem;
 
 }
 
 nav a {
   font-size: 1.5rem;
-  margin-right: 2rem;
+
 }
 
+@media only screen and (max-width:425px;) {
+
+}
 
 /*Main banner*/
 
@@ -139,10 +145,6 @@ nav a {
   width:auto;
 }
 
-.jumbotron .left-container {
-  padding-right: 2rem;
-}
-
 .jumbotron .right-container {
   display: flex;
   align-items: center;
@@ -150,13 +152,12 @@ nav a {
 
 .left-container img {
   max-width:100%;
-  /*padding: 2rem 1.5rem;*/
 
 }
 
 .cta {
   padding: 2rem 2rem;
-  margin-left: 3.3rem;
+  /*margin-left: 3.3rem;*/
 }
 
 .cta-button {
@@ -173,10 +174,6 @@ nav a {
 .news {
   padding: 3.7rem 2rem;
   width:auto;
-}
-
-.news .left-container{
-  padding-right: 2rem;
 }
 
 .card {
@@ -257,9 +254,7 @@ nav a {
 
 .grid-item-head {
   border: 1px solid red;
-  /*padding-top: 1rem;*/
   background: white;
-  /*flex-direction: column;*/
   align-items: stretch;
   height:100%;
   padding: 1rem 1rem 2rem 1rem;
@@ -274,10 +269,7 @@ nav a {
 .thesis {
   display: block;
   padding: 3.7rem 2rem;
-}
-
-.thesis .left-container {
-  padding-right: 2rem;
+  border: 1px solid purple;
 }
 
 .thesis video {
