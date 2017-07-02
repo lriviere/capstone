@@ -259,6 +259,7 @@ nav a {
 
 .cta-button:hover {
   background-color:#316bad;
+
   transition: all .5s ease-in-out;
 }
 
