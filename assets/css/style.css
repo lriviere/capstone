@@ -1,13 +1,22 @@
 /*Universal styles*/
+/*font-family: 'Raleway', sans-serif;
+font-family: 'Playfair Display', serif;*/
+
 
 html  {
   font-size: 12px;
 }
 
 body {
-    font-family:"Arial", sans-serif;
+    font-family:'Raleway', sans-serif;
     width:100%;
     background-color: white;
+}
+
+.wrapper {
+  max-width: 105rem;
+  margin: 0 auto;
+  border: 1px solid yellow;
 }
 
 img {
@@ -15,9 +24,14 @@ img {
   max-width: 100%;
 }
 
+h1, h2 {
+  font-family: 'Playfair Display', serif;
+}
+
 h1 {
   font-size: 6rem;
   font-weight: 900;
+
   margin-bottom: 2rem;
 }
 
@@ -29,12 +43,18 @@ h2 {
 }
 
 h3 {
-  font-size: 3rem;
+  font-size: 2rem;
   margin-bottom: 0.7rem;
 }
 
-p {
+h4 {
   font-size: 1.5rem;
+  padding-top: 0.67rem;
+  padding-bottom: 0.67rem;
+}
+
+p {
+  font-size: 1.4rem;
 }
 
 .container {
@@ -56,10 +76,17 @@ p {
 
 }
 
+.quote {
+  line-height: 2rem;
+  margin-bottom: 2rem;
+}
+
 /*Header*/
 
 .header-container {
   margin-left: 2rem;
+  margin-right: 2rem;
+
   border: 1px solid green; /**for debugging **/
   display: flex;
   justify-content: space-between;
@@ -69,18 +96,21 @@ p {
 
 header {
   border: 1px solid red; /**for debugging **/
-  width: 100%;
-  height: 3rem;
+  height: 4rem;
   display: flex;
   /*justify-content: space-between;*/
   align-items: center;
+  font-size: 2rem;
 
 }
 
 .logo {
   display: flex;
   align-items: center;
+}
 
+header span {
+  font-weight: 600;
 }
 
 nav {
@@ -96,7 +126,8 @@ nav li {
 }
 
 nav a {
-  margin-right: 1.33rem;
+  font-size: 1.5rem;
+  margin-right: 2rem;
 }
 
 
@@ -105,6 +136,7 @@ nav a {
 .jumbotron {
   padding: 3.7rem 2rem;
   background-color: #DCDCDC;
+  width:auto;
 }
 
 .jumbotron .left-container {
@@ -123,7 +155,7 @@ nav a {
 }
 
 .cta {
-  padding: 3rem 3rem;
+  padding: 2rem 2rem;
   margin-left: 3.3rem;
 }
 
@@ -140,14 +172,11 @@ nav a {
 
 .news {
   padding: 3.7rem 2rem;
+  width:auto;
 }
 
 .news .left-container{
   padding-right: 2rem;
-}
-
-.quote {
-  margin-bottom: 2rem;
 }
 
 .card {
@@ -169,7 +198,7 @@ nav a {
 
       .card-info {
         width: 65%;
-        margin: 2.7rem;
+        margin: 0 0 0 2.7rem;
       }
 
       .card:first-child {
@@ -183,4 +212,111 @@ nav a {
       .card p {
         line-height: 2rem;
         margin-bottom: 2rem;
+
       }
+
+
+/*=========*/
+/*Courses*/
+/*=========*/
+
+.courses {
+  display:block;
+  padding-bottom: 2.7rem;
+  background-color: #DCDCDC;
+  width:auto;
+
+}
+
+.section-header {
+  border:1px solid orange;
+  margin: 0;
+  text-align: center;
+  padding-top: 2.7rem;
+  padding-bottom: 2.7rem;
+
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: center;
+}
+
+
+.grid-item {
+  padding-right: 2.7rem;
+  border: 1px solid green;
+  max-width: 25%;
+  padding: 0 2rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.grid-item-head {
+  border: 1px solid red;
+  /*padding-top: 1rem;*/
+  background: white;
+  /*flex-direction: column;*/
+  align-items: stretch;
+  height:100%;
+  padding: 1rem 1rem 2rem 1rem;
+}
+
+/*=======*/
+/*Thesis*/
+/*=======*/
+
+
+
+.thesis {
+  display: block;
+  padding: 3.7rem 2rem;
+}
+
+.thesis .left-container {
+  padding-right: 2rem;
+}
+
+.thesis video {
+  padding-bottom: 2rem;
+}
+
+.thesis .card:first-child {
+  padding-top: 2rem;
+  background-color: #DCDCDC
+}
+
+
+/*=====*/
+/*Footer*/
+/*=====*/
+
+
+footer {
+  border: 1px solid grey;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  height: 3rem;
+
+}
+.user-rights {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.copyright {
+  display: flex;
+  align-items: center;
+}
+
+footer a {
+
+  font-size: 1.5rem;
+  margin-right: 2rem;
+}
