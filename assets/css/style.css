@@ -33,7 +33,6 @@ h1, h2 {
 h1 {
   font-size: 6rem;
   font-weight: 900;
-
   margin-bottom: 2rem;
 }
 
@@ -57,7 +56,6 @@ h4 {
 
 p, a {
   font-size: 1.4rem;
-
 }
 
 a:hover {
@@ -78,13 +76,11 @@ a:hover {
   flex: 1;
   max-width: 60%;
   padding-right: 2rem;
-
 }
 
 .right-container {
   flex: 1;
   max-width: 40%;
-
 }
 
 .quote {
@@ -118,8 +114,14 @@ a:hover {
     padding: 0;
   }
 
-
 }
+
+/*@media only screen and (min-width: 472px) and (max-width:769px) {
+  h1 {
+    font-size: 3rem;
+  }
+}*/
+
 
 /*================*/
 /*Tablet for Generic*/
@@ -143,7 +145,6 @@ a:hover {
     font-size: 1rem;
   }
 
-
 }
 
 /*================*/
@@ -153,22 +154,20 @@ a:hover {
   margin-left: 2rem;
   margin-right: 2rem;
 
-  border: 1px solid green;
+  /*border: 1px solid green;*/
   display: flex;
   justify-content: space-between;
   width: 100%;
-
 }
 
 header {
-  border: 1px solid red; for debugging
+  /*border: 1px solid red; */
   height: 4rem;
   display: flex;
   /*justify-content: space-between;*/
   align-items: center;
   font-size: 2rem;
   background-color: #ffffff;
-
 }
 
 .logo {
@@ -196,12 +195,10 @@ nav.mobile {
 nav li {
   display: inline;
   margin-right: 2rem;
-
 }
 
 nav a {
   font-size: 1.5rem;
-
 }
 /*================*/
 /****** MOBILE FOR HEADER *****/
@@ -240,13 +237,11 @@ nav a {
 
 .left-container img {
   max-width:100%;
-
 }
 
 .cta {
   padding: 2rem 2rem;
   color: #555555;
-  /*margin-left: 3.3rem;*/
 }
 
 .cta-button {
@@ -259,13 +254,12 @@ nav a {
 }
 
 .cta-button a {
-color: #FFFFFF;
+  color: #FFFFFF;
 }
 
 .cta-button:hover {
   background-color:#316bad;
   transition: all .5s ease-in-out;
-
 }
 
         /*================*/
@@ -281,8 +275,6 @@ color: #FFFFFF;
   padding-left: 1.3rem;
   width: 100%;
 }
-
-
 
 }
 
@@ -304,7 +296,7 @@ color: #FFFFFF;
 
       .card-img {
         width: 35%;
-        border: 1px solid green;
+        /*border: 1px solid green;*/
       }
 
       .card-img img {
@@ -331,14 +323,12 @@ color: #FFFFFF;
       .card p {
         line-height: 2rem;
         margin-bottom: 2rem;
-
       }
 
       .read-more {
         border: 1px solid black;
         padding: 0 1rem;
         border-radius: 20px;
-
       }
 
 /*================*/
@@ -387,7 +377,6 @@ color: #FFFFFF;
   padding-bottom: 2.7rem;
   background-color: #bdccd4;
   width:auto;
-
 }
 
 .section-header {
@@ -396,7 +385,6 @@ color: #FFFFFF;
   text-align: center;
   padding-top: 2.7rem;
   padding-bottom: 2.7rem;
-
 }
 
 .grid {
@@ -414,7 +402,6 @@ color: #FFFFFF;
   padding: 0 2rem 2rem 2rem;
   display: flex;
   flex-direction: column;
-
 }
 
 .grid-item-head {
@@ -440,18 +427,15 @@ color: #FFFFFF;
 
   .grid-item {
     max-width: 100%;
-
   }
 
   .grid-item-img {
     display: none;
-
   }
 
 .grid-item-head {
   background: #DCDCDC;
   padding: 1.33rem 1.33rem;
-
 }
 
   .grid-item-head h4, .grid-item-head p  {
@@ -461,8 +445,6 @@ color: #FFFFFF;
   .grid-item-head h3 {
 
   }
-
-
 
 }
 
@@ -518,7 +500,6 @@ color: #FFFFFF;
 /*Footer*/
 /*================*/
 
-
 footer {
   border-top: 1px solid #bdccd4;
   display: flex;
@@ -526,8 +507,8 @@ footer {
   margin-left: 2rem;
   margin-right: 2rem;
   height: 3rem;
-
 }
+
 .user-rights {
   display: flex;
   justify-content: flex-end;
@@ -540,7 +521,6 @@ footer {
 }
 
 footer a {
-
   font-size: 1.5rem;
   margin-right: 2rem;
 }
